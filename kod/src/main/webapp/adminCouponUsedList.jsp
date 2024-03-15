@@ -74,21 +74,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
 					                    <option selected="selected">사용 쿠폰 목록</option>
 					                    <option>미사용 쿠폰 목록</option>
 					                  </select>
-					                <button type="button" class="btn btn-primary" style="margin-left: 70%;">쿠폰 관리</button>
+					                <!-- <button type="button" class="btn btn-primary" style="margin-left: 70%;">쿠폰 관리</button> -->
 					              </div>
 					              <!-- /.card-header -->
 					              <div class="card-body" id="usedCoupon">
 					                <table id="example3" class="table table-bordered table-hover">
 					                  <thead>
 					                  <tr>
-					                    <th>번호</th>
-					                    <th>쿠폰명</th>
-					                    <th>쿠폰 코드</th>
-					                    <th>쿠폰 설명</th>
-					                    <th>할인율</th>
-					                    <th>발행일</th>
-					                    <th>사용자</th>
-					                    <th>사용일</th>
+					                    <th style="width: 8%;">번호</th>
+					                    <th style="width: 14%;">쿠폰명</th>
+					                    <th style="width: *;">쿠폰 코드</th>
+					                    <th style="width: *;">쿠폰 설명</th>
+					                    <th style="width: 8%;">할인율</th>
+					                    <th style="width: 10%;">발행일</th>
+					                    <th style="width: 10%;">사용자</th>
+					                    <th style="width: 10%;">사용일</th>
 					                  </tr>
 					                  </thead>
 					                  <tbody>
@@ -212,14 +212,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
 					                <table id="example4" class="table table-bordered table-hover">
 					                  <thead>
 					                  <tr>
-					                    <th>번호</th>
-					                    <th>쿠폰명</th>
-					                    <th>쿠폰 코드</th>
-					                    <th>쿠폰 설명</th>
-					                    <th>할인율</th>
-					                    <th>발행일</th>
-					                    <th>사용자</th>
-					                    <th>사용 여부</th>
+					                    <th style="width: 8%;">번호</th>
+					                    <th style="width: 14%;">쿠폰명</th>
+					                    <th style="width: *%;">쿠폰 코드</th>
+					                    <th style="width: *%;">쿠폰 설명</th>
+					                    <th style="width: 10%;">할인율</th>
+					                    <th style="width: 10%;">발행일</th>
+					                    <th style="width: 10%;">사용자</th>
+					                    <th style="width: 10%;">사용 여부</th>
 					                  </tr>
 					                  </thead>
 					                  <tbody>
@@ -414,7 +414,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       "autoWidth": false,
       "responsive": true,
       "columnDefs": [
-    	  {"orderable": false, "targets":[1,2,3,4,5]} // target은 0부터 시작, 1,2,3(아이디, 이름, 전화번호)는 정렬에서 제외
+    	  {"orderable": false, "targets":[1,2,3,4,5,7]} // target은 0부터 시작, 1,2,3(아이디, 이름, 전화번호)는 정렬에서 제외
       ],
     });
   });

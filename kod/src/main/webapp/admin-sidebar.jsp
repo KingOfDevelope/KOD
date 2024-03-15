@@ -213,13 +213,17 @@
 								</p>
 						</a>
 							<ul class="nav nav-treeview">
-								<li class="nav-item"><a href="#" class="nav-link"> <i
+								<li class="nav-item"><a href="adminMemberList.jsp" class="nav-link"> <i
 										class="far fa-circle nav-icon"></i>
 										<p>회원 정보 관리</p>
 								</a></li>
 								<li class="nav-item"><a href="#" class="nav-link"> <i
 										class="far fa-circle nav-icon"></i>
 										<p>회원 등급 관리</p>
+								</a></li>
+								<li class="nav-item"><a href="adminMemberRecovery.jsp" class="nav-link"> <i
+										class="far fa-circle nav-icon"></i>
+										<p>회원 복구 신청</p>
 								</a></li>
 							</ul></li>
 						<li class="nav-item "><a href="#" class="nav-link active">

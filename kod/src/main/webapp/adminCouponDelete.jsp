@@ -68,9 +68,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 							<!-- 발행 쿠폰 목록 -->
 							<div class="col-sm-12">
 								<div class="card">
-					              <div class="card-header" style="display: flex; justify-content: space-between;">
+					              <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
 					                <h3 class="card-title" style="margin-top: 0.6%;">쿠폰 삭제</h3>
-					                <button type="button" class="btn btn-primary" onclick="location.href='adminCouponIssue.jsp'" style="margin-left: 85%;">
+					                <button type="button" class="btn btn-primary" onclick="location.href='adminCouponIssue.jsp'" style="margin-left: auto;">
 					                	신규 쿠폰 발급
 					                </button>
 					              </div>
@@ -79,14 +79,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
 					                <table id="example2" class="table table-bordered table-hover">
 					                  <thead>
 					                  <tr>
-					                    <th>번호</th>
-					                    <th>쿠폰명</th>
-					                    <th>쿠폰 코드</th>
-					                    <th>쿠폰 설명</th>
-					                    <th>할인율</th>
-					                    <th>쿠폰 기간</th>
-					                    <th>쿠폰 타입</th>
-					                    <th>삭제</th>
+					                    <th style="width: 8%;">번호</th>
+					                    <th style="width: 14%;">쿠폰명</th>
+					                    <th style="width: *;">쿠폰 코드</th>
+					                    <th style="width: *;">쿠폰 설명</th>
+					                    <th style="width: 10%;">할인율</th>
+					                    <th style="width: 10%;">쿠폰 기간</th>
+					                    <th style="width: 10%;">쿠폰 타입</th>
+					                    <th style="width: 8%;">삭제</th>
 					                  </tr>
 					                  </thead>
 					                  <tbody>
@@ -212,33 +212,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
       "autoWidth": false,
       "responsive": true,
       "columnDefs": [
-    	  {"orderable": false, "targets":[1,2,3]} // target은 0부터 시작, 1,2,3(아이디, 이름, 전화번호)는 정렬에서 제외
+    	  {"orderable": false, "targets":[1,2,3,7]} // target은 0부터 시작, 1,2,3(아이디, 이름, 전화번호)는 정렬에서 제외
       ],
     });
   });
 </script>
 <!-- 쿠폰 목록 js -->
 <!-- Page specific script -->
-<script>
-  $(function () {
-    /* $("#example1").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false,
-      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)'); */
-    $('#example3').DataTable({
-      "paging": true,
-      "lengthChange": false,
-      "searching": false,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false,
-      "responsive": true,
-      "columnDefs": [
-    	  {"orderable": false, "targets":[2,3,4]} // target은 0부터 시작, 1,2,3(아이디, 이름, 전화번호)는 정렬에서 제외
-      ],
-    });
-  });
-</script>
 
 	<!-- jQuery -->
 

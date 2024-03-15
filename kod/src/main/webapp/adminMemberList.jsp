@@ -1,7 +1,6 @@
 <%@page import="model.dto.WishListDTO"%>
 <%@page import="java.util.ArrayList"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <!-- 원화표시 functions함수집합 가져오기 -->
@@ -19,16 +18,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <title>KOD 관리자 페이지</title>
 
 <!-- Google Font: Source Sans Pro -->
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 <!-- Font Awesome Icons -->
 <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
 <!-- Theme style -->
 <link rel="stylesheet" href="dist/css/adminlte.min.css">
 <!-- DataTables -->
-  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+<link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+<link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 	<div class="wrapper">
@@ -43,12 +41,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				<div class="container-fluid">
 					<div class="row mb-2">
 						<div class="col-sm-6">
-							<h1 class="m-0">쿠폰 관리</h1>
+							<h1 class="m-0">회원 관리</h1>
 						</div>
 						<!-- /.col -->
 						<div class="col-sm-6">
 							<ol class="breadcrumb float-sm-right">
-								<li class="breadcrumb-item"><a href="#">Home</a></li>
+								<li class="breadcrumb-item"><a href="adminMain.jsp">Home</a></li>
 								<li class="breadcrumb-item active">대시보드</li>
 							</ol>
 						</div>
@@ -64,149 +62,52 @@ scratch. This page gets rid of all links and provides the needed markup only.
 			<div class="content">
 				<div class="container-fluid">
 					<div class="row">
-						
-							<!-- 발행 쿠폰 목록 -->
-							<div class="col-sm-12">
-								<div class="card">
-					              <div class="card-header" style="display: flex; justify-content: space-between;">
-					                <h3 class="card-title" style="margin-top: 0.6%;">발급 쿠폰 목록</h3>
-					                <!-- <button type="button" class="btn btn-primary" style="margin-left: 82%;">쿠폰 관리</button> -->
-					              </div>
-					              <!-- /.card-header -->
-					              <div class="card-body">
-					                <table id="example3" class="table table-bordered table-hover">
-					                  <thead>
-					                  <tr>
-					                    <th style="width: 8%;">번호</th>
-					                    <th style="width: 14%;">쿠폰명</th>
-					                    <th style="width: *;">쿠폰 코드</th>
-					                    <th style="width: *;">쿠폰 설명</th>
-					                    <th style="width: 8%;">할인율</th>
-					                    <th style="width: 10%;">발행일</th>
-					                    <th style="width: 10%;">만료일</th>
-					                    <th style="width: 10%;">사용자</th>
-					                  </tr>
-					                  </thead>
-					                  <tbody>
-					                  <tr>
-					                    <td>1</td>
-					                    <td>회원가입축하</td>
-					                    <td>NEWPERSON</td>
-					                    <td>회원가입을 축하합니다. 신규회원 10%할인 쿠폰을 드려요</td>
-					                    <td>10%</td>
-					                    <td>2024-03-11</td>
-					                    <td>2024-04-11</td>
-					                    <td>USER1</td>
-					                  </tr>
-					                  <tr>
-					                    <td>2</td>
-					                    <td>회원가입축하</td>
-					                    <td>NEWPERSON</td>
-					                    <td>회원가입을 축하합니다. 신규회원 10%할인 쿠폰을 드려요</td>
-					                    <td>10%</td>
-					                    <td>2024-03-11</td>
-					                    <td>2024-04-11</td>
-					                    <td>USER2</td>
-					                  </tr>
-					                  <tr>
-					                    <td>3</td>
-					                    <td>회원가입축하</td>
-					                    <td>NEWPERSON</td>
-					                    <td>회원가입을 축하합니다. 신규회원 10%할인 쿠폰을 드려요</td>
-					                    <td>10%</td>
-					                    <td>2024-03-11</td>
-					                    <td>2024-04-11</td>
-					                    <td>USER3</td>
-					                  </tr>
-					                  <tr>
-					                    <td>4</td>
-					                    <td>회원가입축하</td>
-					                    <td>NEWPERSON</td>
-					                    <td>회원가입을 축하합니다. 신규회원 10%할인 쿠폰을 드려요</td>
-					                    <td>10%</td>
-					                    <td>2024-03-11</td>
-					                    <td>2024-04-11</td>
-					                    <td>USER4</td>
-					                  </tr>
-					                   <tr>
-					                    <td>5</td>
-					                    <td>생일축하</td>
-					                    <td>HBD</td>
-					                    <td>생일을 축하합니다. 생일 20%할인 쿠폰을 드려요</td>
-					                    <td>20%</td>
-					                    <td>2024-03-11</td>
-					                    <td>2024-04-11</td>
-					                    <td>USER1</td>
-					                  </tr>
-					                  <tr>
-					                    <td>6</td>
-					                    <td>골드등급쿠폰</td>
-					                    <td>GOLDGRADE</td>
-					                    <td>골드등급 회원 축하</td>
-					                    <td>10%</td>
-					                    <td>2024-03-01</td>
-					                    <td>2024-04-01</td>
-					                    <td>USER1</td>
-					                  </tr>
-					                  <tr>
-					                    <td>7</td>
-					                    <td>골드등급쿠폰</td>
-					                    <td>GOLDGRADE</td>
-					                    <td>골드등급 회원 축하</td>
-					                    <td>10%</td>
-					                    <td>2024-03-02</td>
-					                    <td>2024-04-02</td>
-					                    <td>USER2</td>
-					                  </tr>
-					                  <tr>
-					                    <td>8</td>
-					                    <td>골드등급쿠폰</td>
-					                    <td>GOLDGRADE</td>
-					                    <td>골드등급 회원 축하</td>
-					                    <td>10%</td>
-					                    <td>2024-03-11</td>
-					                    <td>2024-04-11</td>
-					                    <td>USER3</td>
-					                  </tr>
-					                  <tr>
-					                    <td>9</td>
-					                    <td>프로모션쿠폰</td>
-					                    <td>HAPPYNEWYEAR2024</td>
-					                    <td>신년맞이 프로모션 쿠폰</td>
-					                    <td>40%</td>
-					                    <td>2024-01-01</td>
-					                    <td>2024-02-01</td>
-					                    <td>USER1</td>
-					                  </tr>
-					                   <tr>
-					                    <td>10</td>
-					                    <td>프로모션쿠폰</td>
-					                    <td>HAPPYNEWYEAR2024</td>
-					                    <td>신년맞이 프로모션 쿠폰</td>
-					                    <td>40%</td>
-					                    <td>2024-01-02</td>
-					                    <td>2024-02-02</td>
-					                    <td>USER2</td>
-					                  </tr>
-					                   <tr>
-					                    <td>11</td>
-					                    <td>프로모션쿠폰</td>
-					                    <td>HAPPYNEWYEAR2024</td>
-					                    <td>신년맞이 프로모션 쿠폰</td>
-					                    <td>40%</td>
-					                    <td>2024-01-03</td>
-					                    <td>2024-02-03</td>
-					                    <td>USER3</td>
-					                  </tr>
-					                </table>
-					              </div>
-					              <!-- /.card-body -->
-					            </div>
-            <!-- /.card -->
+
+						<!-- 회원 목록 테이블 -->
+						<div class="col-sm-12">
+							<div class="card">
+								<div class="card-header" style="display: flex; justify-content: space-between;">
+									<h3 class="card-title" style="margin-top: 0.6%;">회원 목록</h3>
+									<!-- <button type="button" class="btn btn-primary" style="margin-left: 85%;">신규 쿠폰 발급</button> -->
+								</div>
+								<!-- /.card-header -->
+								<div class="card-body">
+									<table id="example2" class="table table-bordered table-hover">
+										<thead>
+											<tr>
+												<th>번호</th>
+												<th>회원ID</th>
+												<th>이름</th>
+												<th>전화번호</th>
+												<th>이메일</th>
+												<th>등급</th>
+												<th>상태</th>
+												<th>생년월일</th>
+											</tr>
+										</thead>
+										<tbody>
+											<c:forEach items="${memberList}" var="member" varStatus="i" begin="0" step="1">
+											<tr>
+												<td>${i.count}</td>
+												<td>${member.memberID}</td>
+												<td>${member.memberName}</td>
+												<td>${member.memberPhNum}</td>
+												<td>${member.memberEmail}</td>
+												<td>${member.memberGrade}</td>
+												<td>${member.memberStatus}</td>
+												<td>${member.memberBirth}</td>
+											</tr>
+											</c:forEach>
+										</tbody>
+									</table>
+								</div>
+								<!-- /.card-body -->
 							</div>
-							<!-- /발행 쿠폰 목록 -->
-							<!-- /.card-body -->
-						
+							<!-- /.card -->
+						</div>
+						<!-- /회원 목록 테이블 -->
+						<!-- /.card-body -->
+
 						<!-- /.card -->
 					</div>
 					<!-- /.col-md-6 -->
@@ -236,8 +137,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 		<!-- To the right -->
 		<div class="float-right d-none d-sm-inline">Anything you want</div>
 		<!-- Default to the left -->
-		<strong>Copyright &copy; 2023-2024 <a
-			href="https://adminlte.io">KOD</a>.
+		<strong>Copyright &copy; 2023-2024 <a href="https://adminlte.io">KOD</a>.
 		</strong> All rights reserved.
 	</footer>
 	</div>
@@ -360,10 +260,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 		})
 	</script>
-	
-<!-- 쿠폰 목록 js -->
-<!-- Page specific script -->
-<script>
+
+	<!-- 쿠폰 목록 js -->
+	<!-- Page specific script -->
+	<script>
   $(function () {
     /* $("#example1").DataTable({
       "responsive": true, "lengthChange": false, "autoWidth": false,
@@ -383,9 +283,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     });
   });
 </script>
-<!-- 쿠폰 목록 js -->
-<!-- Page specific script -->
-<script>
+	<!-- 쿠폰 목록 js -->
+	<!-- Page specific script -->
+	<script>
   $(function () {
     /* $("#example1").DataTable({
       "responsive": true, "lengthChange": false, "autoWidth": false,

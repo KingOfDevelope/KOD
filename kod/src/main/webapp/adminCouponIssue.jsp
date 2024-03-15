@@ -138,7 +138,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				                <label>할인율</label>
 					                <div class="form-group" >
 					                  	<div style="width: 100%;">
-					                  		<input class="form-control" type="text" placeholder="할인율을 입력하세요." style="width: 75%; display: inline-block;">
+					                  		<input class="form-control" type="text" placeholder="할인율을 입력하세요." style="width: 70%; display: inline-block;">
 						                        <div class="form-check" style="display: inline-block; margin-left: 5%;">
 						                          <input class="form-check-input" type="radio" name="radio1">
 						                          <label class="form-check-label">%</label>

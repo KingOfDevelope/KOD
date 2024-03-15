@@ -367,7 +367,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 	<script src="plugins/jquery/jquery.min.js"></script>
 	<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="dist/js/adminlte.min.js"></script>
-	<script src="dist/js/demo.js"></script>
 	<!-- Bootstrap 4 -->
 	<!-- AdminLTE App -->
 	<script src="plugins/chart.js/Chart.min.js"></script>
