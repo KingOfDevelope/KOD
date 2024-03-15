@@ -21,8 +21,8 @@
 					class="nav-link">회원 관리</a></li>
 				<li class="nav-item d-none d-sm-inline-block"><a href="adminProductManage.jsp"
 					class="nav-link">상품 관리</a></li>
-				<li class="nav-item d-none d-sm-inline-block"><a
-					href="adminCouponManage.jsp" class="nav-link">쿠폰 관리</a></li>
+				<li class="nav-item d-none d-sm-inline-block"><a href="adminCouponManage.jsp" 
+					class="nav-link">쿠폰 관리</a></li>
 				<li class="nav-item d-none d-sm-inline-block"><a href="adminReviewManage.jsp"
 					class="nav-link">리뷰 관리</a></li>
 			</ul>
@@ -257,15 +257,15 @@
 									class="nav-link"> <i class="far fa-circle nav-icon"></i>
 										<p>쿠폰 발행</p>
 								</a></li>
-								<li class="nav-item"><a href="#" class="nav-link"> <i
+								<li class="nav-item"><a href="adminCouponList.jsp" class="nav-link"> <i
 										class="far fa-circle nav-icon"></i>
 										<p>쿠폰 발행 목록</p>
 								</a></li>
-								<li class="nav-item"><a href="#" class="nav-link"> <i
+								<li class="nav-item"><a href="adminCouponUsedList.jsp" class="nav-link"> <i
 										class="far fa-circle nav-icon"></i>
 										<p>쿠폰 사용 목록</p>
 								</a></li>
-								<li class="nav-item"><a href="#" class="nav-link"> <i
+								<li class="nav-item"><a href="adminCouponDelete.jsp" class="nav-link"> <i
 										class="far fa-circle nav-icon"></i>
 										<p>쿠폰 삭제</p>
 								</a></li>

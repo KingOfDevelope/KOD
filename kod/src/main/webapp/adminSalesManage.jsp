@@ -363,14 +363,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
 										<tbody>
 											<c:forEach items="${salesList}" var="sales" varStatus="i" begin="0" step="1">
 											<tr>
-												<td><input type="checkbox"></td>
+												<td>${i.count}</td>
 												<td>${sales.memberID}</td>
 												<td>${sales.memberName}</td>
 												<td>${sales.memberPhNum}</td>
 												<td>${sales.memberEmail}</td>
 												<td>${sales.memberGrade}</td>
 												<td>${sales.memberStatus}</td>
-												<td>${sales.memberBirth}</td>
 											</tr>
 											</c:forEach>
 									</table>
