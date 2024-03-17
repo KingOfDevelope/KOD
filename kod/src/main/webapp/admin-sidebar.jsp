@@ -281,7 +281,7 @@
 								</p>
 						</a>
 							<ul class="nav nav-treeview">
-								<li class="nav-item"><a href="#" class="nav-link"> <i
+								<li class="nav-item"><a href="adminReviewList.jsp" class="nav-link"> <i
 										class="far fa-circle nav-icon"></i>
 										<p>리뷰 목록</p>
 								</a></li>

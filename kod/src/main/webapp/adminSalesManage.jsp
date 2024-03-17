@@ -41,7 +41,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				<div class="container-fluid">
 					<div class="row mb-2">
 						<div class="col-sm-6">
-							<h1 class="m-0">쿠폰 관리</h1>
+							<h1 class="m-0">매출 현황</h1>
 						</div>
 						<!-- /.col -->
 						<div class="col-sm-6">
@@ -68,7 +68,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 							<div class="card">
 								<div class="card-header" style="display: flex; justify-content: space-between;">
 									<h3 class="card-title" style="margin-top: 0.6%;">쿠폰 목록</h3>
-									<button type="button" class="btn btn-primary" style="margin-left: 85%;">신규 쿠폰 발급</button>
+									<button type="button" class="btn btn-primary" style="margin-left: auto;">신규 쿠폰 발급</button>
 								</div>
 								<!-- /.card-header -->
 								<div class="card-body">
@@ -84,7 +84,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 							<div class="card">
 								<div class="card-header" style="display: flex; justify-content: space-between;">
 									<h3 class="card-title" style="margin-top: 0.6%;">발급 쿠폰 목록</h3>
-									<button type="button" class="btn btn-primary" style="margin-left: 82%;">쿠폰 관리</button>
+									<button type="button" class="btn btn-primary" style="margin-left: auto;">쿠폰 관리</button>
 								</div>
 								<!-- /.card-header -->
 								<div class="card-body">
