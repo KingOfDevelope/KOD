@@ -62,12 +62,61 @@ scratch. This page gets rid of all links and provides the needed markup only.
 			<div class="content">
 				<div class="container-fluid">
 					<div class="row">
-
+						<!-- 회원 통계 -->
+						<!-- Small boxes (Stat box) -->
+				          <div class="col-lg-4 col-8">
+				            <!-- small box -->
+				            <div class="small-box bg-info">
+				              <div class="inner">
+				                <h3>50</h3>
+				
+				                <p>신규 회원</p>
+				              </div>
+				              <div class="icon">
+				                <i class="ion ion-bag"></i>
+				              </div>
+				              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+				            </div>
+				          </div>
+				          <!-- ./col -->
+				          <div class="col-lg-4 col-8">
+				            <!-- small box -->
+				            <div class="small-box bg-success">
+				              <div class="inner">
+				                <h3>253</h3>
+				
+				                <p>총 회원 수</p>
+				              </div>
+				              <div class="icon">
+				                <i class="ion ion-stats-bars"></i>
+				              </div>
+				              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+				            </div>
+				          </div>
+				          <!-- ./col -->
+				          
+				          <!-- ./col -->
+				          <div class="col-lg-4 col-8">
+				            <!-- small box -->
+				            <div class="small-box bg-danger">
+				              <div class="inner">
+				                <h3>65</h3>
+				
+				                <p>탈퇴 회원</p>
+				              </div>
+				              <div class="icon">
+				                <i class="ion ion-pie-graph"></i>
+				              </div>
+				              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+				            </div>
+				          </div>
+				          <!-- ./col -->
+						<!-- /회원 통계 -->
 						<!-- 회원 목록 테이블 -->
 						<div class="col-sm-12">
 							<div class="card">
 								<div class="card-header" style="display: flex; justify-content: space-between;">
-									<h3 class="card-title" style="margin-top: 0.6%;">회원 정보 관리</h3>
+									<h3 class="card-title" style="margin-top: 0.6%;">회원 목록</h3>
 									<!-- <button type="button" class="btn btn-primary" style="margin-left: 85%;">신규 쿠폰 발급</button> -->
 								</div>
 								<!-- /.card-header -->
@@ -106,54 +155,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 							<!-- /.card -->
 						</div>
 						<!-- /회원 목록 테이블 -->
-						<!-- 발행 쿠폰 목록 -->
-						<div class="col-sm-12">
-							<div class="card">
-								<div class="card-header" style="display: flex; justify-content: space-between;">
-									<h3 class="card-title" style="margin-top: 0.6%;">회원 등급 관리</h3>
-									<button type="button" class="btn btn-danger" style="margin-left: auto;">삭제</button>
-								</div>
-								<!-- /.card-header -->
-								<div class="card-body">
-									<table id="example3" class="table table-bordered table-hover">
-										<thead>
-											<tr>
-												<th><input type="checkbox" onmouseup=""></th>
-												<th>회원ID</th>
-												<th>이름</th>
-												<th>전화번호</th>
-												<th>이메일</th>
-												<th>등급</th>
-												<th>상태</th>
-												<th>생년월일</th>
-											</tr>
-										</thead>
-										<tbody>
-											<c:forEach items="${memberList}" var="member" varStatus="i" begin="0" step="1">
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>${member.memberID}</td>
-												<td>${member.memberName}</td>
-												<td>${member.memberPhNum}</td>
-												<td>${member.memberEmail}</td>
-												<td>${member.memberGrade}</td>
-												<td>${member.memberStatus}</td>
-												<td>${member.memberBirth}</td>
-											</tr>
-											</c:forEach>
-										</tbody>
-									</table>
-								</div>
-								<!-- /.card-body -->
-							</div>
-							<!-- /.card -->
-						</div>
-						<!-- /발행 쿠폰 목록 -->
+						
 						<!-- /.card-body -->
 
 						<!-- /.card -->
-					</div>
-					<!-- /.col-md-6 -->
 
 					<!-- /.col-md-6 -->
 				</div>
@@ -190,13 +195,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 	<script src="plugins/jquery/jquery.min.js"></script>
 	<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="dist/js/adminlte.min.js"></script>
-	<script src="dist/js/demo.js"></script>
-	<!-- Bootstrap 4 -->
-	<!-- AdminLTE App -->
-	<script src="plugins/chart.js/Chart.min.js"></script>
-	<script src="plugins/sparklines/sparkline.js"></script>
-	<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
-	<!-- ChartJS -->
 	<!-- DataTables  & Plugins -->
 	<script src="plugins/datatables/jquery.dataTables.min.js"></script>
 	<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -210,101 +208,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 	<script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
 	<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
 	<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-	<script>
-		$(function() {
-			/* jQueryKnob */
-
-			$('.knob').knob(
-					{
-						/*change : function (value) {
-						 //console.log("change : " + value);
-						 },
-						 release : function (value) {
-						 console.log("release : " + value);
-						 },
-						 cancel : function () {
-						 console.log("cancel : " + this.value);
-						 },*/
-						draw : function() {
-
-							// "tron" case
-							if (this.$.data('skin') == 'tron') {
-
-								var a = this.angle(this.cv) // Angle
-								, sa = this.startAngle // Previous start angle
-								, sat = this.startAngle // Start angle
-								, ea // Previous end angle
-								, eat = sat + a // End angle
-								, r = true
-
-								this.g.lineWidth = this.lineWidth
-
-								this.o.cursor && (sat = eat - 0.3)
-										&& (eat = eat + 0.3)
-
-								if (this.o.displayPrevious) {
-									ea = this.startAngle
-											+ this.angle(this.value)
-									this.o.cursor && (sa = ea - 0.3)
-											&& (ea = ea + 0.3)
-									this.g.beginPath()
-									this.g.strokeStyle = this.previousColor
-									this.g.arc(this.xy, this.xy, this.radius
-											- this.lineWidth, sa, ea, false)
-									this.g.stroke()
-								}
-
-								this.g.beginPath()
-								this.g.strokeStyle = r ? this.o.fgColor
-										: this.fgColor
-								this.g.arc(this.xy, this.xy, this.radius
-										- this.lineWidth, sat, eat, false)
-								this.g.stroke()
-
-								this.g.lineWidth = 2
-								this.g.beginPath()
-								this.g.strokeStyle = this.o.fgColor
-								this.g.arc(this.xy, this.xy, this.radius
-										- this.lineWidth + 1 + this.lineWidth
-										* 2 / 3, 0, 2 * Math.PI, false)
-								this.g.stroke()
-
-								return false
-							}
-						}
-					})
-			/* END JQUERY KNOB */
-
-			//INITIALIZE SPARKLINE CHARTS
-			var sparkline1 = new Sparkline($('#sparkline-1')[0], {
-				width : 240,
-				height : 70,
-				lineColor : '#92c1dc',
-				endColor : '#92c1dc'
-			})
-			var sparkline2 = new Sparkline($('#sparkline-2')[0], {
-				width : 240,
-				height : 70,
-				lineColor : '#f56954',
-				endColor : '#f56954'
-			})
-			var sparkline3 = new Sparkline($('#sparkline-3')[0], {
-				width : 240,
-				height : 70,
-				lineColor : '#3af221',
-				endColor : '#3af221'
-			})
-
-			sparkline1
-					.draw([ 1000, 1200, 920, 927, 931, 1027, 819, 930, 1021 ])
-			sparkline2.draw([ 515, 519, 520, 522, 652, 810, 370, 627, 319, 630,
-					921 ])
-			sparkline3.draw([ 15, 19, 20, 22, 33, 27, 31, 27, 19, 30, 21 ])
-
-		})
-	</script>
-
-	<!-- 쿠폰 목록 js -->
+	
 	<!-- Page specific script -->
 	<script>
   $(function () {

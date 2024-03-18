@@ -217,9 +217,9 @@
 										class="far fa-circle nav-icon"></i>
 										<p>회원 정보 관리</p>
 								</a></li>
-								<li class="nav-item"><a href="#" class="nav-link"> <i
+								<li class="nav-item"><a href="adminMemberGradeList.jsp" class="nav-link"> <i
 										class="far fa-circle nav-icon"></i>
-										<p>회원 등급 관리</p>
+										<p>등급별 회원 목록</p>
 								</a></li>
 								<li class="nav-item"><a href="adminMemberRecovery.jsp" class="nav-link"> <i
 										class="far fa-circle nav-icon"></i>
@@ -233,23 +233,20 @@
 								</p>
 						</a>
 							<ul class="nav nav-treeview">
-								<li class="nav-item"><a href="#" class="nav-link"> <i
+								<li class="nav-item"><a href="adminProductList.jsp" class="nav-link"> <i
 										class="far fa-circle nav-icon"></i>
 										<p>상품 목록</p>
 								</a></li>
-								<li class="nav-item"><a href="#" class="nav-link"> <i
+								<li class="nav-item"><a href="adminProductRegister.jsp" class="nav-link"> <i
 										class="far fa-circle nav-icon"></i>
 										<p>상품 등록</p>
 								</a></li>
-								<li class="nav-item"><a href="#" class="nav-link"> <i
+								<li class="nav-item"><a href="adminProductUpdate.jsp" class="nav-link"> <i
 										class="far fa-circle nav-icon"></i>
-										<p>재고 관리</p>
+										<p>상품 정보 수정</p>
 								</a></li>
-								<li class="nav-item"><a href="#" class="nav-link"> <i
-										class="far fa-circle nav-icon"></i>
-										<p>상품 삭제</p>
-								</a></li>
-							</ul></li>
+							</ul>
+						</li>
 						<li class="nav-item "><a href="#" class="nav-link active">
 								<i class="nav-icon fas fa-ticket-alt"></i>
 								<p>

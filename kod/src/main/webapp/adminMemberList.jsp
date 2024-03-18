@@ -68,7 +68,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 							<div class="card">
 								<div class="card-header" style="display: flex; justify-content: space-between;">
 									<h3 class="card-title" style="margin-top: 0.6%;">회원 목록</h3>
-									<!-- <button type="button" class="btn btn-primary" style="margin-left: 85%;">신규 쿠폰 발급</button> -->
+									<button type="button" class="btn btn-danger" style="margin-left: auto;">삭제</button>
 								</div>
 								<!-- /.card-header -->
 								<div class="card-body">
