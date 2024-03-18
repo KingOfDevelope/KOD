@@ -219,7 +219,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 					                    <th style="width: 10%;">할인율</th>
 					                    <th style="width: 10%;">발행일</th>
 					                    <th style="width: 10%;">사용자</th>
-					                    <th style="width: 10%;">사용 여부</th>
+					                    <th style="width: 10%;">만료일</th>
 					                  </tr>
 					                  </thead>
 					                  <tbody>
@@ -231,7 +231,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 					                    <td>10%</td>
 					                    <td>2024-03-11</td>
 					                    <td>USER1</td>
-					                    <td>N</td>
+					                    <td>2024-03-11</td>
 					                  </tr>
 					                  <tr>
 					                    <td>2</td>
@@ -241,7 +241,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 					                    <td>10%</td>
 					                    <td>2024-03-11</td>
 					                    <td>USER2</td>
-					                    <td>N</td>
+					                    <td>2024-03-11</td>
 					                  </tr>
 					                  <tr>
 					                    <td>3</td>
@@ -251,7 +251,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 					                    <td>10%</td>
 					                    <td>2024-03-11</td>
 					                    <td>USER3</td>
-					                    <td>N</td>
+					                    <td>2024-03-11</td>
 					                  </tr>
 					                  <tr>
 					                    <td>4</td>
@@ -261,7 +261,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 					                    <td>10%</td>
 					                    <td>2024-03-11</td>
 					                    <td>USER4</td>
-					                    <td>N</td>
+					                    <td>2024-03-11</td>
 					                  </tr>
 					                   <tr>
 					                    <td>5</td>
@@ -271,7 +271,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 					                    <td>20%</td>
 					                    <td>2024-03-11</td>
 					                    <td>USER1</td>
-					                    <td>N</td>
+					                    <td>2024-03-11</td>
 					                  </tr>
 					                  <tr>
 					                    <td>6</td>
@@ -281,7 +281,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 					                    <td>10%</td>
 					                    <td>2024-03-01</td>
 					                    <td>USER1</td>
-					                    <td>N</td>
+					                    <td>2024-03-11</td>
 					                  </tr>
 					                  <tr>
 					                    <td>7</td>
@@ -291,7 +291,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 					                    <td>10%</td>
 					                    <td>2024-03-02</td>
 					                    <td>USER2</td>
-					                    <td>N</td>
+					                    <td>2024-03-11</td>
 					                  </tr>
 					                  <tr>
 					                    <td>8</td>
@@ -301,7 +301,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 					                    <td>10%</td>
 					                    <td>2024-03-11</td>
 					                    <td>USER3</td>
-					                    <td>N</td>
+					                    <td>2024-03-11</td>
 					                  </tr>
 					                  <tr>
 					                    <td>9</td>
@@ -311,7 +311,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 					                    <td>40%</td>
 					                    <td>2024-01-01</td>
 					                    <td>USER1</td>
-					                    <td>N</td>
+					                    <td>2024-03-11</td>
 					                  </tr>
 					                   <tr>
 					                    <td>10</td>
@@ -321,7 +321,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 					                    <td>40%</td>
 					                    <td>2024-01-02</td>
 					                    <td>USER2</td>
-					                    <td>N</td>
+					                    <td>2024-03-11</td>
 					                  </tr>
 					                   <tr>
 					                    <td>11</td>
@@ -331,7 +331,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 					                    <td>40%</td>
 					                    <td>2024-01-03</td>
 					                    <td>USER3</td>
-					                    <td>N</td>
+					                    <td>2024-03-11</td>
 					                  </tr>
 					                </table>
 					              </div>
