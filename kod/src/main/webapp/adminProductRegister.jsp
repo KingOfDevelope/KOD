@@ -65,6 +65,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				<div class="container-fluid">
 					<div class="row">
 						<!-- 상품 등록 -->
+						폼 태그 이미지 파일인거 확인
 						<div class="col-sm-12">
 							<div class="card">
 								<div class="card-header" style="display: flex; justify-content: space-between;">

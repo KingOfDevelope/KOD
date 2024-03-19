@@ -72,10 +72,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				
 				                <p>신규 회원</p>
 				              </div>
-				              <div class="icon">
-				                <i class="ion ion-bag"></i>
-				              </div>
-				              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
 				            </div>
 				          </div>
 				          <!-- ./col -->
@@ -87,10 +83,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				
 				                <p>총 회원 수</p>
 				              </div>
-				              <div class="icon">
-				                <i class="ion ion-stats-bars"></i>
-				              </div>
-				              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
 				            </div>
 				          </div>
 				          <!-- ./col -->
@@ -104,10 +96,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				
 				                <p>탈퇴 회원</p>
 				              </div>
-				              <div class="icon">
-				                <i class="ion ion-pie-graph"></i>
-				              </div>
-				              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
 				            </div>
 				          </div>
 				          <!-- ./col -->

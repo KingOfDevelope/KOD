@@ -197,7 +197,7 @@
 								</p>
 						</a>
 							<ul class="nav nav-treeview">
-								<li class="nav-item"><a href="#" class="nav-link active">
+								<li class="nav-item"><a href="adminQuarterlySales.jsp" class="nav-link active">
 										<i class="far fa-circle nav-icon"></i>
 										<p>월 매출액</p>
 								</a></li>

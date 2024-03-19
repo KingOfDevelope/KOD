@@ -71,10 +71,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				
 				                <p>상품 재고</p>
 				              </div>
-				              <div class="icon">
-				                <i class="ion ion-bag"></i>
-				              </div>
-				              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
 				            </div>
 				          </div>
 				          <!-- ./col -->
@@ -86,10 +82,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				
 				                <p>재고 비율</p>
 				              </div>
-				              <div class="icon">
-				                <i class="ion ion-stats-bars"></i>
-				              </div>
-				              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
 				            </div>
 				          </div>
 				          <!-- ./col -->
@@ -101,10 +93,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				
 				                <p>주문 건수(당일)</p>
 				              </div>
-				              <div class="icon">
-				                <i class="ion ion-person-add"></i>
-				              </div>
-				              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
 				            </div>
 				          </div>
 				          <!-- ./col -->
@@ -116,10 +104,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				
 				                <p>매진</p>
 				              </div>
-				              <div class="icon">
-				                <i class="ion ion-pie-graph"></i>
-				              </div>
-				              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
 				            </div>
 				          </div>
 				          <!-- ./col -->
@@ -129,7 +113,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 							<div class="card">
 								<div class="card-header" style="display: flex; justify-content: space-between;">
 									<h3 class="card-title" style="margin-top: 0.6%;">상품 목록</h3>
-									<button type="button" class="btn btn-primary" style="margin-left: auto;;">신규 상품 등록</button>
+									<button type="button" class="btn btn-primary" onclick="location.href='adminProductRegister.jsp'" style="margin-left: auto;;">신규 상품 등록</button>
 								</div>
 								<!-- /.card-header -->
 								<div class="card-body">

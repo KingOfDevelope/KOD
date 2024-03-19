@@ -119,7 +119,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 								</div>
 								<!-- /.card-header -->
 								<div class="card-body">
-									<button type="button" class="btn btn-primary" style="margin-left: auto;">신규 상품 등록</button>
+									<button type="button" class="btn btn-primary" onclick="location.href='adminProductRegister.jsp'" style="margin-left: auto;">신규 상품 등록</button>
 									<button type="button" class="btn btn-danger" style="margin-left: auto;">삭제</button>
 									<table id="example2" class="table table-bordered table-hover">
 										<thead>

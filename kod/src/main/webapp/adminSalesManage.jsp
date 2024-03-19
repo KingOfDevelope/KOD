@@ -62,56 +62,79 @@ scratch. This page gets rid of all links and provides the needed markup only.
 			<div class="content">
 				<div class="container-fluid">
 					<div class="row">
-
-						<!-- 회원 목록 테이블 -->
-						<div class="col-sm-12">
-							<div class="card">
-								<div class="card-header" style="display: flex; justify-content: space-between;">
-									<h3 class="card-title" style="margin-top: 0.6%;">쿠폰 목록</h3>
-									<button type="button" class="btn btn-primary" style="margin-left: auto;">신규 쿠폰 발급</button>
-								</div>
-								<!-- /.card-header -->
-								<div class="card-body">
-									
-								</div>
-								<!-- /.card-body -->
-							</div>
-							<!-- /.card -->
-						</div>
-						<!-- /쿠폰 목록 테이블 -->
+						<!-- Small boxes (Stat box) -->
+				          <div class="col-lg-4 col-6">
+				            <!-- small box -->
+				            <div class="small-box bg-info">
+				              <div class="inner">
+				                <h3>150</h3>
+				
+				                <p>주문 건수</p>
+				              </div>
+				            </div>
+				          </div>
+				          <!-- ./col -->
+				          <div class="col-lg-4 col-6">
+				            <!-- small box -->
+				            <div class="small-box bg-success">
+				              <div class="inner">
+				                <h3>532000원</h3>
+				
+				                <p>월 매출</p>
+				              </div>
+				            </div>
+				          </div>
+				          <!-- ./col -->
+				          <div class="col-lg-4 col-6">
+				            <!-- small box -->
+				            <div class="small-box bg-warning">
+				              <div class="inner">
+				                <h3>83210000원</h3>
+				
+				                <p>총 매출</p>
+				              </div>
+				            </div>
+				          </div>
+				          <!-- ./col -->
+				        <!-- /.row -->
 						<!-- 발행 쿠폰 목록 -->
 						<div class="col-sm-12">
 							<div class="card">
 								<div class="card-header" style="display: flex; justify-content: space-between;">
-									<h3 class="card-title" style="margin-top: 0.6%;">발급 쿠폰 목록</h3>
-									<button type="button" class="btn btn-primary" style="margin-left: auto;">쿠폰 관리</button>
+									<h3 class="card-title" style="margin-top: 0.6%;">2024년도 매출</h3>
+									<button type="button" class="btn btn-primary" style="margin-left: auto;">매출 관리</button>
 								</div>
 								<!-- /.card-header -->
 								<div class="card-body">
 									<table id="example3" class="table table-bordered table-hover">
 										<thead>
 											<tr>
-												<th>번호</th>
-												<th>쿠폰명</th>
-												<th>쿠폰 코드</th>
-												<th>쿠폰 설명</th>
-												<th>할인율</th>
-												<th>발행일</th>
-												<th>사용자</th>
+												<th width="20%;">분기</th>
+												<th>상품 금액</th>
+												<th>주문 건수</th>
 											</tr>
 										</thead>
 										<tbody>
-											<c:forEach items="${salesList}" var="sales" varStatus="i" begin="0" step="1">
 											<tr>
-												<td>${i.count}</td>
-												<td>${sales.memberID}</td>
-												<td>${sales.memberName}</td>
-												<td>${sales.memberPhNum}</td>
-												<td>${sales.memberEmail}</td>
-												<td>${sales.memberGrade}</td>
-												<td>${sales.memberStatus}</td>
+												<td>1</td>
+												<td>40000000원</td>
+												<td>150건</td>
 											</tr>
-											</c:forEach>
+											<tr>
+												<td>2</td>
+												<td>30000000원</td>
+												<td>125건</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>46500000원</td>
+												<td>162건</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>13200000원</td>
+												<td>321건</td>
+											</tr>
 									</table>
 								</div>
 								<!-- /.card-body -->
