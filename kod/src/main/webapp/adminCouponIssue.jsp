@@ -82,6 +82,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				            </div>
 				          </div>
 				          <!-- /.card-header -->
+				          <form action="/issueCouponByGrade" method="POST">
 				          <div class="card-body" style="display: flex;">
 				            
 				              <div class="col-sm-6">
@@ -104,13 +105,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				            	</div>
 				                <!-- /.form-group -->
 				              
-				              <!-- /.col -->
-				              	<div class="col-sm-10">
-					                <div class="form-group">
-					                  <label>쿠폰 코드</label>
-					                   <input class="form-control" type="text" placeholder="쿠폰 코드를 입력하세요.">
-					                </div>
-					            </div>
+				              	
 				                <!-- /.form-group -->
 				                <div class="col-sm-10">
 					                <div class="form-group">
@@ -120,17 +115,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				                </div>
 				                <!-- /.form-group -->
 				                
-				                <div class="col-sm-10">
+				                <div class="col-sm-10" id="coupon-period" >
 					                <div class="form-group">
 				                  		<label>쿠폰 기간</label>
-				                  		<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text">
-													<i class="far fa-calendar-alt"></i>
-												</span>
-											</div>
-										<input type="text" class="form-control float-right" id="reservation">
-										</div>
+				                  		<input class="form-control" type="text" placeholder="쿠폰 사용 기간을 입력하세요.">
+					                </div>
+				                </div>
+				                
+				                <div class="col-sm-10" id="coupon-enddate" style="display: none;">
+				                    <!-- Date -->
+					                <div class="form-group">
+					                  <label>만료일</label>
+					                    <input class="form-control" type="text" placeholder="쿠폰 만료일을 입력하세요.">
 					                </div>
 				                </div>
 				                
@@ -218,10 +214,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
 		                		</div>
 		                		<!-- /관리자 발행 선택 시 div -->
 		                		
+		                		<div class="col-sm-6" id="coupon-code" style="display: none;">
+					                <div class="form-group" >
+					                  <label>쿠폰 코드</label>
+					                   <input class="form-control" type="text" placeholder="쿠폰 코드를 입력하세요.">
+					                </div>
+					            </div>
 				              <!-- /.col -->
 				              
 				        </div>
-				              
+		              	</form>
 				        <!-- /.card -->
 				
 				        <!-- SELECT2 EXAMPLE -->
@@ -279,34 +281,45 @@ scratch. This page gets rid of all links and provides the needed markup only.
 	<!-- Date Range -->
 	<script src="plugins/daterangepicker/daterangepicker.js"></script>
 	
-<!-- Date Range -->
-<script>
-  $(function () {
-    $('#reservation').daterangepicker(
-      {
-     	startDate: moment(),					// 발행 날짜(moment : 현재 날짜)
-        endDate  : moment().add(1,'month') , 	// 종료 날짜 (디폴트값 : 1달)
-      }
-    )
-  });
-</script>
 
 <!-- 관리자 발행 선택 시 div -->
 <script>
 document.getElementById('coupon-type').addEventListener('change', function() {
 	  var userGradeSection = document.getElementById('user-grade');
 	  var userOptionSection = document.getElementById('issue-option');
+	  var couponCodeSection = document.getElementById('coupon-code');
+	  var couponPeriodSection = document.getElementById('coupon-period');
+	  var couponEndSection = document.getElementById('coupon-enddate');
 	  if (this.value === '관리자 발행') {
 		  userOptionSection.style.display = 'none';
 		  userGradeSection.style.display = 'block';
+		  couponCodeSection.style.display = 'none';
+		  couponPeriodSection.style.display = 'none';
+		  couponEndSection.style.display = 'block';
 	  } else if (this.value === '자동 발행'){
 		  userGradeSection.style.display = 'none';
 		  userOptionSection.style.display = 'block';
+		  couponCodeSection.style.display = 'none';
+		  couponPeriodSection.style.display = 'block';
+		  couponEndSection.style.display = 'none';
 	  } else{
 		  userGradeSection.style.display = 'none';
 		  userOptionSection.style.display = 'none';
+		  couponCodeSection.style.display = 'block';
+		  couponPeriodSection.style.display = 'none';
+		  couponEndSection.style.display = 'block';
 	  }
 	});
+</script>
+
+<script>
+$(function () {
+
+	//Date picker
+    $('#reservationdate').daterangepicker({
+        format: 'L'
+    });
+  })
 </script>
 	<!-- jQuery -->
 
