@@ -77,7 +77,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 											<tr>
 												<th width="20%;">분기</th>
 												<th>상품 금액</th>
-												<th>주문 건수</th>
+												<th>판매 수량</th>
 											</tr>
 										</thead>
 										<tbody>
