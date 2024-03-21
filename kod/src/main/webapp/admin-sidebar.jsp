@@ -190,22 +190,14 @@
 						data-widget="treeview" role="menu" data-accordion="false">
 						<!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-						<li class="nav-item "><a href="#" class="nav-link active">
+						<li class="nav-item ">
+							<a href="adminSalesManage.jsp" class="nav-link active">
 								<i class="nav-icon fas fa-tachometer-alt"></i>
 								<p>
-									매출 현황 <i class="right fas fa-angle-left"></i>
+									매출 현황
 								</p>
-						</a>
-							<ul class="nav nav-treeview">
-								<li class="nav-item"><a href="adminQuarterlySales.jsp" class="nav-link active">
-										<i class="far fa-circle nav-icon"></i>
-										<p>월 매출액</p>
-								</a></li>
-								<li class="nav-item"><a href="#" class="nav-link"> <i
-										class="far fa-circle nav-icon"></i>
-										<p>상품별 판매량</p>
-								</a></li>
-							</ul></li>
+							</a>
+						</li>
 						<li class="nav-item "><a href="#" class="nav-link active">
 								<i class="nav-icon fas fa-user-alt"></i>
 								<p>
@@ -244,6 +236,10 @@
 								<li class="nav-item"><a href="adminProductUpdate.jsp" class="nav-link"> <i
 										class="far fa-circle nav-icon"></i>
 										<p>상품 정보 수정</p>
+								</a></li>
+								<li class="nav-item"><a href="adminCategoryManage.jsp" class="nav-link"> <i
+										class="far fa-circle nav-icon"></i>
+										<p>상품 카테고리 추가</p>
 								</a></li>
 							</ul>
 						</li>

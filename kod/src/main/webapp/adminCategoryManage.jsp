@@ -62,107 +62,78 @@ scratch. This page gets rid of all links and provides the needed markup only.
 			<div class="content">
 				<div class="container-fluid">
 					<div class="row">
-						<!-- 상품 목록 검색 조건 -->
-						<div class="col-sm-12">
-							<div class="card">
-								<div class="card-header" style="display: flex; justify-content: space-between;">
-									<h3 class="card-title" style="margin-top: 0.6%;">검색 조건</h3>
-									<button type="button" class="btn btn-primary" style="margin-left: auto;;">검색하기</button>
-								</div>
-								<div class="card-body">
-									<table id="example3" class="table table-bordered table-hover">
-										<thead>
-											<tr>
-												<th>상품번호</th>
-												<td><input class="form-control form-control-sm" type="text"></td>
-												<th>상품명</th>
-												<td><input class="form-control form-control-sm" type="text"></td>
-											</tr>
-											<tr>
-												<th>브랜드</th>
-												<td>
-													<select class="form-control select2" style="width: 100%;" required>
-								                    	<option selected="selected" style="display: none;"></option>
-								                    	<option>뱅앤올룹슨</option>
-								                    	<option>삼성</option>
-								                    	<option>LG</option>
-							                  		</select>
-												</td>
-												<th>카테고리</th>
-												<td>
-													<select class="form-control select2" style="width: 100%;" required>
-								                    	<option selected="selected" style="display: none;"></option>
-								                    	<option>전체</option>
-								                    	<option>헤드폰</option>
-								                    	<option>이어폰</option>
-								                    	<option>스피커</option>
-							                  		</select>
-												</td>
-											</tr>
-											<tr>
-												<th>가격</th>
-												<td colspan="3"><input class="form-control form-control-sm col-4" type="text" style="display: inline-block;"> 원 이상 ~ 
-												<input class="form-control form-control-sm col-4" type="text" style="display: inline-block;"> 원 이하</td>
-											</tr>
-										</thead>
-									</table>
-								</div>
-							</div>
-						</div>
-						<!-- /상품 목록 검색 조건 -->
 						
-						<!-- 상품 목록 테이블 -->
-						<div class="col-sm-12">
+						<!-- 상품 카테고리 테이블 -->
+						<div class="col-sm-6">
 							<div class="card">
 								<div class="card-header" style="display: flex; justify-content: space-between;">
-									<h3 class="card-title" style="margin-top: 0.6%;">상품 목록</h3>
+									<h3 class="card-title" style="margin-top: 0.6%;">상품 카테고리 목록</h3>
+									<button type="button" class="btn btn-primary" onclick="location.href='adminProductRegister.jsp'" style="margin-left: auto;">신규 카테고리 등록</button>
 								</div>
 								<!-- /.card-header -->
 								<div class="card-body">
-									<button type="button" class="btn btn-primary" onclick="location.href='adminProductRegister.jsp'" style="margin-left: auto;">신규 상품 등록</button>
-									<button type="button" class="btn btn-danger" style="margin-left: auto;">삭제</button>
-									<button type="button" class="btn btn-primary" style="margin-left: auto;">카테고리 추가</button>
+									
 									<table id="example2" class="table table-bordered table-hover">
 										<thead>
 											<tr>
-												<th><input type="checkbox" onmouseup=""></th>
 												<th>번호</th>
-												<th>상품번호</th>
-												<th>상품 이미지</th>
-												<th>상품명</th>
-												<th>상품가격</th>
-												<th>브랜드</th>
 												<th>카테고리</th>
-												<th>상품정보</th>
-												<th>재고</th>
 											</tr>
 										</thead>
 										<tbody>
-											<c:forEach items="${productList}" var="product" varStatus="i" begin="0" step="1">
 											<tr>
-												<td><input type="checkbox"></td>
+												<td>1</td>
+												<td>헤드폰</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>이어폰</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>스피커</td>
+											</tr>
+										</tbody>
+										<%-- <tbody>
+											<c:forEach items="${category}" var="category" varStatus="i" begin="0" step="1">
+											<tr>
 												<td>${i.count}</td>
-												<td>${product.productID}</td>
-												<td>${img.imageURL}</td>
-												<td>${product.productName}</td>
-												<td>${product.productPrice}</td>
-												<td>${product.productBrand}</td>
-												<td>${product.productCategory}</td>
-												<td>${product.productInfo}</td>
-												<td>${product.productStock}</td>
+												<td>${category.type}</td>
 											</tr>
 											</c:forEach>
-										</tbody>
+										</tbody> --%>
 									</table>
 								</div>
 								<!-- /.card-body -->
 							</div>
 							<!-- /.card -->
-						<!-- /상품 목록 테이블 -->
+						</div>
+						<!-- /상품 카테고리 테이블 -->
 						
-					</div>
-					<!-- /.col-md-6 -->
-
+						<!-- 카테고리 추가 div -->
+						<div class="col-sm-6">
+							<div class="card">
+								<div class="card-header" style="display: flex; justify-content: space-between;">
+									<h3 class="card-title" style="margin-top: 0.6%;">상품 카테고리 추가</h3>
+									<button type="button" class="btn btn-primary" onclick="location.href='adminProductRegister.jsp'" style="margin-left: auto;">신규 카테고리 추가</button>
+								</div>
+								<!-- /.card-header -->
+								<div class="card-body">
+									
+									<table id="example2" class="table table-bordered table-hover">
+										<thead>
+											<tr>
+												<th>카테고리</th>
+												<td><input type="text"></td>
+											</tr>
+										</thead>
+									</table>
+								</div>
+								<!-- /.card-body -->
+							</div>
+							<!-- /.card -->
+						</div>
+						<!-- /카테고리 추가 테이블 -->
 				</div>
 				<!-- /.row -->
 			</div>
