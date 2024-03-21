@@ -63,18 +63,29 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				<div class="container-fluid">
 					<div class="row">
 						<!-- Small boxes (Stat box) -->
-				          <div class="col-lg-4 col-6">
+				          <div class="col-lg-3 col-6">
 				            <!-- small box -->
 				            <div class="small-box bg-info">
 				              <div class="inner">
 				                <h3>150</h3>
 				
-				                <p>주문 건수</p>
+				                <p>주문 건수(월)</p>
 				              </div>
 				            </div>
 				          </div>
 				          <!-- ./col -->
-				          <div class="col-lg-4 col-6">
+				          <div class="col-lg-3 col-6">
+				            <!-- small box -->
+				            <div class="small-box" style="background-color: #20c997;">
+				              <div class="inner">
+				                <h3>732</h3>
+				
+				                <p>주문 건수(연)</p>
+				              </div>
+				            </div>
+				          </div>
+				          <!-- ./col -->
+				          <div class="col-lg-3 col-6">
 				            <!-- small box -->
 				            <div class="small-box bg-success">
 				              <div class="inner">
@@ -85,7 +96,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				            </div>
 				          </div>
 				          <!-- ./col -->
-				          <div class="col-lg-4 col-6">
+				          <div class="col-lg-3 col-6">
 				            <!-- small box -->
 				            <div class="small-box bg-warning">
 				              <div class="inner">
@@ -102,7 +113,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 							<div class="card">
 								<div class="card-header" style="display: flex; justify-content: space-between;">
 									<h3 class="card-title" style="margin-top: 0.6%;">2024년도 매출</h3>
-									<button type="button" class="btn btn-primary" style="margin-left: auto;">매출 관리</button>
 								</div>
 								<!-- /.card-header -->
 								<div class="card-body">
@@ -111,7 +121,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 											<tr>
 												<th width="20%;">분기</th>
 												<th>상품 금액</th>
-												<th>주문 건수</th>
+												<th>판매 수량</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -120,10 +130,282 @@ scratch. This page gets rid of all links and provides the needed markup only.
 												<td>40000000원</td>
 												<td>150건</td>
 											</tr>
+											<tr id="hidden-table" style="display: none;">
+												<td colspan="3">
+									              <table class="table table-bordered table-hover" id="hidden1" >
+														<thead>
+															<tr>
+																<th>순위</th>
+																<th>상품명</th>
+																<th>상품가격</th>
+																<th>판매수량</th>
+																<th>매출액</th>
+															</tr>
+														</thead>
+														<tbody style="white-space: nowrap;">
+															<tr>
+																<td>1</td>
+																<td>Beoplay EX Ferrari Edition</td>
+																<td>649000원</td>
+																<td>12</td>
+																<td>1230000원</td>
+															</tr>
+															<tr>
+																<td>2</td>
+																<td>Beoplay EX</td>
+																<td>498000원</td>
+																<td>24</td>
+																<td>152000원</td>
+															</tr>
+															<tr>
+																<td>3</td>
+																<td>Beoplay H95 Ferrari Edition</td>
+																<td>189900원</td>
+																<td>32</td>
+																<td>2321000원</td>
+															</tr>
+															<tr>
+																<td>4</td>
+																<td>Beoplay H95</td>
+																<td>14480원</td>
+																<td>27</td>
+																<td>1234000원</td>
+															</tr>
+															<tr>
+																<td>5</td>
+																<td>Beoplay HX</td>
+																<td>678000원</td>
+																<td>17</td>
+																<td>221000원</td>
+															</tr>
+															<tr>
+																<td>6</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>7</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>8</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>9</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>10</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>11</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>12</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>13</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>14</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>15</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>16</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>17</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
 											<tr>
 												<td>2</td>
 												<td>30000000원</td>
 												<td>125건</td>
+											</tr>
+											<tr id="hidden-table2" style="display: none; ">
+												<td colspan="3">
+									              <table class="table table-bordered table-hover" id="hidden2">
+														<thead>
+															<tr>
+																<th>순위</th>
+																<th>상품명</th>
+																<th>상품가격</th>
+																<th>판매수량</th>
+																<th>매출액</th>
+															</tr>
+														</thead>
+														<tbody style=" overflow: scroll; height: 100px; white-space: nowrap;">
+															<tr>
+																<td>1</td>
+																<td>Beoplay EX Ferrari Edition</td>
+																<td>649000원</td>
+																<td>12</td>
+																<td>1230000원</td>
+															</tr>
+															<tr>
+																<td>2</td>
+																<td>Beoplay EX</td>
+																<td>498000원</td>
+																<td>24</td>
+																<td>152000원</td>
+															</tr>
+															<tr>
+																<td>3</td>
+																<td>Beoplay H95 Ferrari Edition</td>
+																<td>189900원</td>
+																<td>32</td>
+																<td>2321000원</td>
+															</tr>
+															<tr>
+																<td>4</td>
+																<td>Beoplay H95</td>
+																<td>14480원</td>
+																<td>27</td>
+																<td>1234000원</td>
+															</tr>
+															<tr>
+																<td>5</td>
+																<td>Beoplay HX</td>
+																<td>678000원</td>
+																<td>17</td>
+																<td>221000원</td>
+															</tr>
+															<tr>
+																<td>6</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>7</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>8</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>9</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>10</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>11</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>12</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>13</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>14</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>15</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>16</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+															<tr>
+																<td>17</td>
+																<td>Beoplay Portal Beoplay Portal</td>
+																<td>679000원</td>
+																<td>19</td>
+																<td>251000원</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
 											</tr>
 											<tr>
 												<td>3</td>
@@ -204,98 +486,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
 	<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
 	<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 	<script>
-		$(function() {
-			/* jQueryKnob */
+    document.addEventListener("DOMContentLoaded", function() {
+        // 첫 번째 테이블의 모든 행을 가져옵니다.
+        var rows = document.querySelectorAll("#example3 tbody tr");
 
-			$('.knob').knob(
-					{
-						/*change : function (value) {
-						 //console.log("change : " + value);
-						 },
-						 release : function (value) {
-						 console.log("release : " + value);
-						 },
-						 cancel : function () {
-						 console.log("cancel : " + this.value);
-						 },*/
-						draw : function() {
-
-							// "tron" case
-							if (this.$.data('skin') == 'tron') {
-
-								var a = this.angle(this.cv) // Angle
-								, sa = this.startAngle // Previous start angle
-								, sat = this.startAngle // Start angle
-								, ea // Previous end angle
-								, eat = sat + a // End angle
-								, r = true
-
-								this.g.lineWidth = this.lineWidth
-
-								this.o.cursor && (sat = eat - 0.3)
-										&& (eat = eat + 0.3)
-
-								if (this.o.displayPrevious) {
-									ea = this.startAngle
-											+ this.angle(this.value)
-									this.o.cursor && (sa = ea - 0.3)
-											&& (ea = ea + 0.3)
-									this.g.beginPath()
-									this.g.strokeStyle = this.previousColor
-									this.g.arc(this.xy, this.xy, this.radius
-											- this.lineWidth, sa, ea, false)
-									this.g.stroke()
-								}
-
-								this.g.beginPath()
-								this.g.strokeStyle = r ? this.o.fgColor
-										: this.fgColor
-								this.g.arc(this.xy, this.xy, this.radius
-										- this.lineWidth, sat, eat, false)
-								this.g.stroke()
-
-								this.g.lineWidth = 2
-								this.g.beginPath()
-								this.g.strokeStyle = this.o.fgColor
-								this.g.arc(this.xy, this.xy, this.radius
-										- this.lineWidth + 1 + this.lineWidth
-										* 2 / 3, 0, 2 * Math.PI, false)
-								this.g.stroke()
-
-								return false
-							}
-						}
-					})
-			/* END JQUERY KNOB */
-
-			//INITIALIZE SPARKLINE CHARTS
-			var sparkline1 = new Sparkline($('#sparkline-1')[0], {
-				width : 240,
-				height : 70,
-				lineColor : '#92c1dc',
-				endColor : '#92c1dc'
-			})
-			var sparkline2 = new Sparkline($('#sparkline-2')[0], {
-				width : 240,
-				height : 70,
-				lineColor : '#f56954',
-				endColor : '#f56954'
-			})
-			var sparkline3 = new Sparkline($('#sparkline-3')[0], {
-				width : 240,
-				height : 70,
-				lineColor : '#3af221',
-				endColor : '#3af221'
-			})
-
-			sparkline1
-					.draw([ 1000, 1200, 920, 927, 931, 1027, 819, 930, 1021 ])
-			sparkline2.draw([ 515, 519, 520, 522, 652, 810, 370, 627, 319, 630,
-					921 ])
-			sparkline3.draw([ 15, 19, 20, 22, 33, 27, 31, 27, 19, 30, 21 ])
-
-		})
-	</script>
+        // 각 행에 클릭 이벤트 리스너를 추가합니다.
+        rows.forEach(function(row) {
+            row.addEventListener("click", function() {
+                // 두 번째 테이블의 가시성을 토글합니다.
+                	var hiddenTable = document.getElementById("hidden-table");
+                    var hiddenTable2 = document.getElementById("hidden-table2");
+                    hiddenTable.style.display = (hiddenTable.style.display === "none") ? "table-row" : "none";
+                    hiddenTable2.style.display = (hiddenTable2.style.display === "none") ? "table-row" : "none";
+                
+            });
+        });
+    });
+</script>
 
 	<!-- 쿠폰 목록 js -->
 	<!-- Page specific script -->
