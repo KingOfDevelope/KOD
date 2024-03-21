@@ -102,7 +102,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 				              <div class="inner">
 				                <h3>83210000원</h3>
 				
-				                <p>총 매출</p>
+				                <p>연 매출</p>
 				              </div>
 				            </div>
 				          </div>
