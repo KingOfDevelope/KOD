@@ -134,7 +134,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 							<!-- LINE CHART -->
 				            <div class="card">
 				              <div class="card-header">
-				                <h3 class="card-title">월 주문건수</h3>
+				                <h3 class="card-title">월간 매출</h3>
 				
 				                <div class="card-tools">
 				                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
