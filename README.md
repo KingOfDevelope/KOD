@@ -1,5 +1,4 @@
 ![0001](https://github.com/KingOfDevelope/KOD/assets/129861996/6bf47941-9104-42e5-908b-88589123f3ab)
-![0002](https://github.com/KingOfDevelope/KOD/assets/129861996/64822b01-7726-4773-b928-6207fa0f98a6)
 ![0003](https://github.com/KingOfDevelope/KOD/assets/129861996/a8fb4b06-05cf-4c60-8b46-cc0ea1b60290)
 ![0004](https://github.com/KingOfDevelope/KOD/assets/129861996/5bcaa3ba-63af-4ae7-b440-9238d53ab8b7)
 ![0005](https://github.com/KingOfDevelope/KOD/assets/129861996/3bbb063e-717d-4c64-b264-affdfbc41b1c)
